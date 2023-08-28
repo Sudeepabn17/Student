@@ -1,0 +1,113 @@
+.container {
+    position: relative;
+    color: rgb(126, 35, 40);
+}
+.went {
+    position: relative;
+    color: rgb(68, 49, 136);
+    font-size: large;
+}
+body {
+    position: relative;
+}
+.address-box{
+    position:relative;
+    bottom:20px;
+    left:100px;
+    right: 100px;
+
+    padding:10px;
+    border-radius:5px;
+    margin-right: 1000px;
+   
+}
+.highlight{
+    left: 200px;
+    bottom: -100px;
+    position:center;
+    margin-right: 100px;
+}
+.address-box1{
+    position:relative;
+    bottom:0px;
+    position: center;
+    left: 500px;
+    right: 500px;
+
+    padding:10px;
+    border-radius:5px;
+    margin-right: 1000px;
+}
+.address-box2{
+    position:relative;
+    bottom:10px;
+    position: center;
+    left: 1000px;
+    right: 1000px;
+
+    padding:10px;
+    border-radius:5px;
+    margin-right: 1000px;
+}
+.pot{   margin:400px;
+    margin-top:auto ;
+        position:relative;
+        position:center;
+        width:500px;
+        height:300px;
+        background-color:yellow;
+        box-shadow: 10px 10px 5px #888888;
+        
+}
+.c{
+    filter:sepia(100%);
+}
+.a{
+
+    
+    width:400px;
+    height:200px;
+    background:rgb(134, 41, 127);
+    animation:myfirst 5s;
+    
+    
+    
+    @keyframes myfirst
+    {
+    from {background:red;}
+    to {background:yellow;}
+    }
+}
+.d-block{
+    height: 200px;
+    width: 100px;;
+}
+.pot1{
+    margin:400px;
+    margin-top:auto ;
+        position:relative;
+       
+        width:500px;
+        height:300px;
+        background-color:yellow;
+        box-shadow: 10px 10px 5px #888888;
+
+}
+.pot1{
+    margin:400px;
+    margin-top:auto ;
+        position:relative;
+       
+        width:400px;
+        height:300px;
+        background-color:rgb(55, 179, 55);
+        box-shadow: 10px 10px 5px #888888;
+
+}
+.rat{
+    font-size: larger;
+    font-style: italic;
+}
+.poty{
+    background: url(images/bsc5.jpg);
+}

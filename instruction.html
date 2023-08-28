@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><
+<div class="poty">
+<h1>MCQ Quiz</h1>
+
+<form id="quizForm">
+    <h3>Question 1: What is the capital of France?</h3>
+    <label>
+        <input type="radio" name="q1" value="a"> A. Paris
+    </label><br>
+    <label>
+        <input type="radio" name="q1" value="b"> B. Madrid
+    </label><br>
+    <label>
+        <input type="radio" name="q1" value="c"> C. London
+    </label><br>
+
+    <h3>Question 2: Which planet is known as the Red Planet?</h3>
+    <label>
+        <input type="radio" name="q2" value="a"> A. Venus
+    </label><br>
+    <label>
+        <input type="radio" name="q2" value="b"> B. Mars
+    </label><br>
+    <label>
+        <input type="radio" name="q2" value="c"> C. Jupiter
+    </label><br>
+
+    <input type="button" value="Submit" onclick="calculateScore()">
+</form>
+
+<div id="result"></div>
+
+<script>
+    function calculateScore() {
+        const answers = {
+            q1: "a", // Correct answers
+            q2: "b"
+        };
+
+        const form = document.getElementById("quizForm");
+        let score = 0;
+
+        for (let question in answers) {
+            const selectedOption = form.elements[question].value;
+            if (selectedOption === answers[question]) {
+                score += 2;
+            }
+        }
+
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = "Your score: " + score + " out of 4";
+    }
+</script>
+</div>
+<style>
+    body{
+      margin:0;
+      padding:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: url(images/bsc5.jpg);
+      background-size:cover ;
+    }
+  </style>
+</body>
+</html>
